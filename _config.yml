@@ -1,0 +1,6 @@
+title: "Codebolt"
+description: "Coding notes and articles from codebolt"
+url: "https://codebolt.github.io" # the full URL of your site
+baseurl: "" # no subpath for username.github.io
+theme: minima
+paginate: 5
