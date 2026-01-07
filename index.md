@@ -5,7 +5,7 @@ title: Index
 
 # About me
 
-My name is Rune Aamodt and I'm a software developer living in Norway. Welcome to my blog, if you have any feedback feel free to reach out via [LinkedIn](https://www.linkedin.com/in/runeaam/).
+Welcome to my blog! My name is Rune Aamodt and I'm a software developer living in Norway. If you have any feedback or want to get in touch, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/runeaam/).
 
 # Blog posts
 
