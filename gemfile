@@ -1,0 +1,3 @@
+source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+# using github-pages gem makes local builds match GitHub's environment
