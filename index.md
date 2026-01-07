@@ -1,6 +1,18 @@
 ---
-layout: home
-title: Welcome
+layout: default
+title: Blog
 ---
 
-Hi — welcome to my blog. I'll use this space for short posts about coding, tools, notes, and experiments.
+# Blog
+
+{% for post in site.posts %}
+
+## [{{ post.title }}]({{ post.url | relative_url }})
+
+_{{ post.date | date: "%Y-%m-%d" }}_{% if post.categories and post.categories.size > 0 %} — {{ post.categories | join: ", " }}{% endif %}
+
+{{ post.excerpt | strip_html | truncate: 240 }}
+
+[Read more →]({{ post.url | relative_url }})
+
+{% endfor %}
