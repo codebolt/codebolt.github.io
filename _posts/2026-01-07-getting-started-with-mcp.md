@@ -5,7 +5,7 @@ date: 2026-01-07 00:01:00
 categories: mcp csharp open-webui
 ---
 
-This post is a brief quickstart for building **MCP (Model Context Protocol) servers** in **C#** using **Visual Studio 2026** (with the MCP project template), with local testing in [**Open WebUI**](https://docs.openwebui.com/) (a free and open-source AI chat client that you can easily run locally). I'll show you how to make a simple MCP server with a couple of basic tools, running it, and configuring Open WebUI to make use of it.
+This post is a brief quickstart for building **MCP (Model Context Protocol) servers** in **C#** using **Visual Studio 2026** (with the MCP project template), with local testing in [**Open WebUI**](https://docs.openwebui.com/) (a free and open-source AI chat client that you can easily run locally). I'll show you how to make a simple MCP server with one simple tool, running it, and configuring Open WebUI to make use of it.
 
 ## What we’ll do
 
@@ -15,7 +15,8 @@ This post is a brief quickstart for building **MCP (Model Context Protocol) serv
 
 ## Prerequisites
 
-- Visual Studio 2026 (you can download the Community Edition for free [here](https://visualstudio.microsoft.com/vs/community/))
+- You should have a basic level of experience with C#, and a general understanding of what MCP is
+- Visual Studio 2026 (you can download the Community Edition for free [here](https://visualstudio.microsoft.com/vs/community/)) - make sure to include both the _ASP.NET web development_ and _Azure and AI development_ workloads during setup
 - An Open WebUI installation with an LLM backend (or another chat client that supports MCP)
 
 A guide to downloading and setting up Open WebUI exists [here](https://docs.openwebui.com/getting-started/quick-start/) - you can choose between using Python or Docker, personally I find it simplest to just run it with Python on my Windows machine. After installation you must connect it to an LLM. This could be a locally running model like Ollama, or an online API which you have a key for (personally I'm using Azure OpenAI). When done, and with the WebUI client running, you should verify that everything works by opening it (by default this should be on [https://localhost:8080](localhost:8080)) and giving it a quick chat.
@@ -24,7 +25,7 @@ A guide to downloading and setting up Open WebUI exists [here](https://docs.open
 
 ## 1) Creating the MCP server project (Visual Studio 2026)
 
-1. **File → New → Project**
+1. Open the _Create a new project_ dialog in Visual Studio.
 2. Search for **“MCP”** and pick the **Local MCP Server Console App** C# template.
 3. Name it something like `HelloMcpServer`.
 4. Create the project.
@@ -178,7 +179,7 @@ Now, let's register the MCP server in Open WebUI and test it. From the main page
 Click the '+' icon to the right to add your server. Use the following configuration:  
 ![MCP Server Config In Open WebUI](/assets/images/open-webui-mcp-add.png)
 
-Now click _Save_. If you start a New Chat, ot should show up in the list of Tools just below the chat panel, where it needs to be enabled:  
+Now click _Save_. If you start a New Chat, it should show up in the list of Tools just below the chat panel, where it needs to be enabled:  
 ![Tools In Open WebUI](/assets/images/open-webui-tools.png)
 
 Now we can test that the server works by prompting something like this:  
