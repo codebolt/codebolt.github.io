@@ -1,7 +1,8 @@
 title: "Rune's Blog"
-description: "Outlet for sharing thoughts with the world."
-url: "https://codebolt.github.io" # the full URL of your site
+description: "My personal outlet for sharing stuff with the world."
+url: "https://codebolt.github.io"
 baseurl: "" # no subpath for username.github.io
 theme: minima
+google_analytics: "G-BCELR7DFQ3"
 paginate: 5
 timezone: Europe/Oslo
